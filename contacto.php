@@ -46,7 +46,7 @@ $destinatario = 'schoolworldcompany@gmail.com';
 mail($destinatario, 'Nuevo mensaje del formulario de contacto', utf8_decode($string));
 
 // Redirigir al usuario a la página de contacto
-header('Location: contacto.html');
+header('Location: index.html');
 exit;
 
 ?>
