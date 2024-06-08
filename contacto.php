@@ -1,9 +1,8 @@
 <?php
-
 $servername = "hcnfc"; // Servidor de la base de datos
 $username = "root";  // Usuario de la base de datos
 $password = "Yoriel206+";  // Contraseña del usuario
-$dbname = "forms;  // Nombre de la base de datos
+$dbname = "forms";  // Nombre de la base de datos
 
 // Crear conexión a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,6 +11,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
+
+// Obtener los datos del formulario
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$asunto = $_POST['asunto'];
+$mensaje = $_POST['mensaje'];
 
 // Preparar la sentencia SQL para insertar los datos en la tabla
 $stmt = $conn->prepare("INSERT INTO mensajes (nombre, email, asunto, mensaje) VALUES (?, ?, ?, ?)");
@@ -28,25 +33,20 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 
-$nombre = $_POST['nombre'];
-$correo = $_POST['email'];
-$asunto = $_POST['asunto'];
-$text = $_POST['mensaje'];
+// Preparar el correo electrónico
+$string = "El formulario ha sido respondido por " . $nombre . " /r/n ";
+$string .= "Su email es " . $email . " /r/n ";
+$string .= "El asunto es " . $asunto . " /r/n ";
+$string .= "El mensaje es " . $mensaje . " /r/n ";
 
-
-//Formulario mandado a gmail
-
-$string = "El formulario ha sido respondido por" . $nombre . " /r/n ";
-$string .= "su email es" . $correo . " /r/n ";
-$string .= "el asunto es" . $asunto . " /r/n ";
-$string .= "el mensaje es" . $text . " /r/n ";
-
-//Destinatario
-
+// Destinatario
 $destinatario = 'schoolworldcompany@gmail.com';
 
-mail( $destinatario, utf8_decode($string));
-header('location:contacto.html')
+// Enviar el correo electrónico
+mail($destinatario, 'Nuevo mensaje del formulario de contacto', utf8_decode($string));
 
+// Redirigir al usuario a la página de contacto
+header('Location: contacto.html');
+exit;
 
 ?>
