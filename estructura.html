@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/174b3bdc1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL WORLD</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        nav{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0px;
+            padding-right:0;
+            font-weight: bold;
+            background-color:  rgb(217,217,217);
+            position:fixed;
+            width: 100%;
+            border-radius: 15px;
+            z-index: 1000;
+        }
+        .imagen3{
+            width: 95px;
+        }
+        ul li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ffffff; 
+        }
+        .In h1{
+            background-color: rgb(9, 39, 77);
+            color: #ffffff;
+            padding: 70px;
+            text-align: left;
+            font-size: 50px;
+            
+        }
+        footer{
+            background-color: rgb(9, 39, 77);
+            color: #ffffff;
+            padding: 30px;
+            text-align: left;
+            font-size: 10px;
+        }
+        .h21{
+            margin :40px;
+            text-align: justify;
+        }
+        .div1 {
+    position: relative;
+    height: 100%; /* O el tamaño que necesites */
+    color: white; /* Color del texto para que se vea bien sobre la imagen */
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para asegurar que los pseudo-elementos no sobresalgan */
+}
+
+.div1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(IMAGENES/imagen31.png) no-repeat center center/cover;
+    filter: blur(10px); /* Ajusta el valor para más o menos desenfoque */
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.div1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.div1 p {
+    position: relative;
+    z-index: 2;
+    margin: 20%;
+    font-size: 25px;
+
+}
+.div1 .h21{
+    position: relative;
+    z-index: 50;
+    margin-right: 15%;
+
+}
+        .h22{
+            margin :40px;
+            text-align: center;
+            background-color: rgb(9, 39, 77);
+            color: #ffffff;
+            background-size: 100%;
+        }
+        .div2{
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size: 20px;
+            text-align: justify;
+            align-items: center;
+        }
+        .div2 th{
+            padding: 25px;
+        }
+        .h23{
+            margin :40px;
+            text-align: center;
+            background-color: rgb(9, 39, 77);
+            color: #ffffff;
+            background-size: 100%;
+        }
+        .div3{
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size: 15px;
+            text-align: justify;
+            align-items: center;
+        }
+        .div3 th{
+            padding: 25px;
+        }
+        .imagen10{
+            margin-top: 30px;
+            width: 500px;
+            align-items: center;
+        }
+        .imagen11{
+            margin-top: 30px;
+            width: 700px;
+            align-items: center;
+        }
+        .imagen12{
+            width: 900px;
+            margin-top: 50px;
+        }
+</style>
+</head>
+<title>ESTRUCTURA</title>
+    <link rel="icon" href="IMAGENES/img21.ico" type="image/x-icon">
+<body>
+
+    <header>
+        <nav>
+        <ul>
+            <li><img src="IMAGENES/img.png" class="imagen3"></li>
+            <li><i class="fa fa-bars" aria-hidden="true"></i> <a href="inicio.html">INICIO</a></li>
+            <li><i class="fa fa-university" aria-hidden="true"></i> <a href="estructura.html">SCHOOL WORLD</a></li>
+            <li><i class="fa fa-users" aria-hidden="true"></i> <a href="acercanos.html">ACERCA DE NOSOTROS</a></li>
+            <li><i class="fa fa-comments" aria-hidden="true"></i></i> <a href="contacto.html"> CONTACTO</a></li>
+            <li><i class="fa fa-line-chart"></i><a href="finance.html"> FINANCE</a></li>
+            <li><i class="fa fa-hand-peace-o"></i> <a href="handtalk.html"> HANDTALK</a></li>
+        </ul>
+        </nav>
+        </header>
+    <br><br><br><br>
+
+    <div class="In"><H1>SCHOOL WORLD</H1></div>
+    <div class="div1" data-aos="fade-up"
+    data-aos-duration="1500">
+
+    <p>School World es una empresa que tiene como propósito apoyar la educación a nivel mundial
+    contribuyendo con herramientas para que las instituciones educativas y los alumnos puedan
+    reforzar sus conocimientos, guiarse, apoyarse y sobre todo aprender, por eso
+    desarrollamos softwares que apoyan nuestros principios tal como Finance que permite
+    llevar un manejo sano del capital de las instituciones educativas para aprovechar al máximo
+    los recursos y tener un control de estos mismos y HandTalk que brinda apoyo al aprendizaje
+    del lenguaje de señas como lecciones y cuestionarios para apoyar los contenidos y
+    promover la inclusión.</p>
+    </div></div>
+
+<div data-aos="fade-up"
+data-aos-duration="1500">
+    <br><br><b><h2 class="h22">Objetivos</h2></b><br><br>
+    <div class="div2"><table align="center">
+        
+        <tr>
+            <th>
+                Que todas las escuelas del mundo tengan una administración sana y responsable
+                en sus gastos.
+                Ser una empresa que promueva el respeto hacia cualquier persona sin importar su género,
+                etnia, creencia o discapacidad.
+                Ser una empresa exitosa globalmente.
+                Brindar educación de calidad.
+                Formar hábitos de estudio en nuestros usuarios.
+            </th>
+            <th>
+                <img src="IMAGENES/img10.png" class="imagen10">
+            </th>
+        </tr>
+    </div>
+    </table>
+</div>
+
+<div data-aos="fade-up"
+data-aos-duration="1500">
+
+<br><br><b><h2 class="h23">Beneficios</h2></b>
+<div class="div3"><table align="center">
+    
+    <td class="h21">
+        Los beneficios para los usuarios de los softwares de School World son:
+    </td>
+    <tr>
+        <th class="h21"> 
+            <li>Control de recursos económicos </li><br>
+            <li>Educación Financiera</li> <br>
+            <li>Automatización de Procesos </li><br>
+            <li>Mejora de la Transparencia </li><br>
+            <li> de planificación en proyectos </li><br>
+            <li>Aprendizaje accesible</li> <br> 
+            <li>Flexibilidad de tiempo y lugar</li> <br> 
+            <li>Mejor capacitación para la comunicación </li><br>
+            <li>Interactividad </li><br>
+        </th>
+        <th>
+            <img src="IMAGENES/img11.png" class="imagen11">
+        </th>
+    </tr>
+    </div>
+</table>
+</div>
+
+</div>
+<br><br><br>
+<footer>DERECHOS RESERVADOS 2024 SCHOOL WORLD® <br><br>
+    <div class="ics">
+        <a href="https://www.instagram.com/schoolworld_company/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram" style="font-size: 45px; color: #ffffff; padding-right: 20px;" ></i></a>
+        <a href=" https://w.app/SchoolWorld"><i class="fa-brands fa-whatsapp" style="font-size: 45px; color: #ffffff; padding-right: 20px;" ></i></a>
+        <a href="https://x.com/SchoolWrld"><i class="fa-brands fa-x-twitter" style="font-size: 45px; color: #ffffff; padding-right: 20px;" ></i></a>
+</div> </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

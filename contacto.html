@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/174b3bdc1a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-right: 0;
+        font-weight: bold;
+        background-color: rgb(217, 217, 217);
+        position: fixed;
+        width: 100%;
+        border-radius: 15px;
+        z-index: 1000;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ffffff;
+    }
+
+    .imagen3 {
+        width: 95px;
+    }
+
+    .In h1 {
+        background-color: rgb(9, 39, 77);
+        color: #ffffff;
+        padding: 70px;
+        text-align: left;
+        font-size: 50px;
+    }
+
+    footer {
+        background-color: rgb(9, 39, 77);
+        color: #ffffff;
+        padding: 30px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    form {
+        background-image: url(IMAGENES/img42.png);
+        padding: 50px 55px;
+        box-shadow: 0 0 28px rgba(0, 0, 0, 2);
+        border-radius: 20px;
+        text-align: center;
+        width: 40%;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    .cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        /* color de fondo opcional */
+    }
+
+    input.group {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    input,
+    textarea {
+        padding: 17px 25px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        border: 2px solid;
+        color: #000000;
+        outline: none;
+    }
+
+    .cont {
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    form h2 {
+        color: #ffffff;
+    }
+
+    .btn {
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+
+    .ubi h3 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .ubi {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .mapa iframe {
+        width: 50%;
+    }
+
+    .ubi p {
+        font-size: 20px;
+    }
+
+    .form {
+        align-items: center;
+    }
+</style>
+<script>
+    function Guardar() {
+        alert("Se han enviado los datos");
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="icon" href="IMAGENES/img21.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="IMAGENES/img.png" class="imagen3"></li>
+                <li><i class="fa fa-bars" aria-hidden="true"></i> <a href="inicio.html">INICIO</a></li>
+                <li><i class="fa fa-university" aria-hidden="true"></i> <a href="estructura.html">SCHOOL WORLD</a></li>
+                <li><i class="fa fa-users" aria-hidden="true"></i> <a href="acercanos.html">ACERCA DE NOSOTROS</a></li>
+                <li><i class="fa fa-comments" aria-hidden="true"></i></i> <a href="contacto.html"> CONTACTO</a></li>
+                <li><i class="fa fa-line-chart"></i><a href="finance.html"> FINANCE</a></li>
+                <li><i class="fa fa-hand-peace-o"></i> <a href="handtalk.html"> HANDTALK</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+    <div class="In">
+        <H1>CONTACTO</H1>
+    </div>
+    <div class="cont" data-aos="fade-down">
+
+
+            <form action="contacto.php" method="post" class="form">
+                <div class="ingreso">
+                    <h2> ¡CONTACTANOS!</h2><br>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="12" pattern="[A-Za-z]+"
+                        title="No se permite el uso de numeros" required> <br>
+
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" maxlength="60" required> <br>
+
+                    <fieldset class="select">
+
+                        <legend>Asunto</legend>
+                        <input id="type1" name="asunto" type="radio" value="queja" required>
+                        <label for="type1" class="radio-label">Queja</label>
+                        <input id="type2" name="asunto" type="radio" value="comentario">
+                        <label for="type2" class="radio-label">Comentario</label>
+                        <input id="type3" name="asunto" type="radio" value="duda">
+                        <label for="type3" class="radio-label">Duda</label>
+
+                    </fieldset>
+
+                    <label for="message">Mensaje</label> <br> <br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" maxlength="150" required></textarea> <br>
+
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+    </div>
+    <hr>
+    <div data-aos="fade-down">
+        <div class="ubi">
+
+            <b><br><br>
+                <h3>Dirección:
+                    <hr>
+                </h3>
+            </b><br><br>
+            <p>Mar Mediterráneo 227, Popotla, 11400 Ciudad de México, CDMX
+                Horario de atención:
+                13:00 pm – 21:00 pm</p>
+            <br><br><br><br>
+            <div class="mapa"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.009001214481!2d-99.18562161267727!3d19.455469791867657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8bd9777a765%3A0x57501a5479751d18!2sCentro%20de%20Estudios%20Cient%C3%ADficos%20y%20Tecnol%C3%B3gicos%20N%C2%B0%209%20%22Juan%20de%20Dios%20B%C3%A1tiz%22%20IPN!5e0!3m2!1ses-419!2smx!4v1717228479464!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <br><br><br>
+        </div>
+    </div>
+
+    <footer>DERECHOS RESERVADOS 2024 SCHOOL WORLD® <br><br>
+        <div class="ics">
+            <a href="https://www.instagram.com/schoolworld_company/?utm_source=ig_web_button_share_sheet"><i
+                    class="fa-brands fa-instagram"
+                    style="font-size: 45px; color: #ffffff; padding-right: 20px;"></i></a>
+            <a href=" https://w.app/SchoolWorld"><i class="fa-brands fa-whatsapp"
+                    style="font-size: 45px; color: #ffffff; padding-right: 20px;"></i></a>
+            <a href="https://x.com/SchoolWrld"><i class="fa-brands fa-x-twitter"
+                    style="font-size: 45px; color: #ffffff; padding-right: 20px;"></i></a>
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
