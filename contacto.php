@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost"; // Servidor de la base de datos
-$username = "Alumnos";  // Usuario de la base de datos
-$password = "n0m3l0";  // Contraseña del usuario
-$dbname = "formulario_contacto";  // Nombre de la base de datos
+$username = "root";  // Usuario de la base de datos
+$password = "Yoriel206+";  // Contraseña del usuario
+$dbname = "forms;  // Nombre de la base de datos
 
 // Crear conexión a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
