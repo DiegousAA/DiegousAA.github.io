@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost"; // Servidor de la base de datos
+$servername = "hcnfc"; // Servidor de la base de datos
 $username = "root";  // Usuario de la base de datos
 $password = "Yoriel206+";  // Contraseña del usuario
 $dbname = "forms;  // Nombre de la base de datos
